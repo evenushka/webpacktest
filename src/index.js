@@ -1,4 +1,2 @@
-alert('omg it works');
-
-import './scripts/test1.js';
-import './scripts/test2.js';
+const mult = (a, b) => a*b;
+console.log(mult(4, 5));
