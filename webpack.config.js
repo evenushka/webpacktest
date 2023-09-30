@@ -8,6 +8,11 @@ const devMode = mode === 'development';
 
 module.exports = {
     mode,
+    devServer: {
+        port: 4200,
+        open: true,
+        hot: true,
+    },
     entry: path.resolve(__dirname, 'src', 'index.js'),
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -32,6 +37,10 @@ module.exports = {
                 test: /\.(c|sa|sc)ss$/i,
                 use: [devMode ? 'style-loader' : MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
             },
+            {
+                test: /\.woff2?$/i,
+                type: 'asset/resource',
+            }
         ]
     }
 }
