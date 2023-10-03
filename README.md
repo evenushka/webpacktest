@@ -1,1 +1,1 @@
-![Кот](https://github.com/evenushka/webpacktest/blob/main/src/img/cat.jpg)
+
